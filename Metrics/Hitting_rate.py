@@ -105,7 +105,7 @@ def calculate_metric(args=None, _real_data=None, _synthetic=None, **kwargs):
 
         # Parallelize the hit calculation
         hit_count = sum(
-            Parallel(n_jobs=-1, backend="loky")(
+            Parallel(n_jobs=-1, backend="threading")(
                 delayed(is_hit)(row)
                 for _, row in real_subset.iterrows()
             )
