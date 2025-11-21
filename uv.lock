@@ -358,6 +358,27 @@ wheels = [
 ]
 
 [[package]]
+name = "bokeh"
+version = "3.8.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "contourpy" },
+    { name = "jinja2" },
+    { name = "narwhals" },
+    { name = "numpy" },
+    { name = "packaging" },
+    { name = "pandas" },
+    { name = "pillow" },
+    { name = "pyyaml" },
+    { name = "tornado", marker = "sys_platform != 'emscripten'" },
+    { name = "xyzservices" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/de/42/777c0627dbd78a2a7c6c6a1c3327e8a787ec99a4b84ae93245ce49c96af7/bokeh-3.8.1.tar.gz", hash = "sha256:40df8e632de367399d06979cbd76c9e68a133a3138e1adde37c4a4715ecb4d6e", size = 6529791 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5d/e7/b18bee0772d49c0f78d57f15a68e85257abf7224d9b910706abe8bd1dc0f/bokeh-3.8.1-py3-none-any.whl", hash = "sha256:89a66cb8bfe85e91bce144e3ccf3c4a6f0f1347e7006282972568ea0ecacbb00", size = 7206137 },
+]
+
+[[package]]
 name = "brotli"
 version = "1.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3009,6 +3030,7 @@ name = "priveval"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "bokeh" },
     { name = "datasynthesizer" },
     { name = "faiss-cpu" },
     { name = "faker" },
@@ -3025,6 +3047,7 @@ dependencies = [
     { name = "scikit-learn" },
     { name = "scipy" },
     { name = "sdmetrics" },
+    { name = "seaborn" },
     { name = "streamlit" },
     { name = "synthcity" },
     { name = "synthesis" },
@@ -3036,6 +3059,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "bokeh", specifier = ">=3.8.1" },
     { name = "datasynthesizer" },
     { name = "faiss-cpu" },
     { name = "faker", specifier = ">=38.2.0" },
@@ -3053,6 +3077,7 @@ requires-dist = [
     { name = "scipy", specifier = "==1.11.4" },
     { name = "scipy", specifier = ">=1.10.0" },
     { name = "sdmetrics" },
+    { name = "seaborn", specifier = ">=0.13.2" },
     { name = "streamlit" },
     { name = "synthcity" },
     { name = "synthesis", specifier = ">=1.1061" },
@@ -4997,6 +5022,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/e8/07/a85fc2a58d4be5d9189c4ddb08222672e5041b849afe263e61040e1b3feb/xgbse-0.2.3.tar.gz", hash = "sha256:c9a90c7867b18ec5ddc3d28ed6ac26e0facdfe7ca5445d405732780a86fc5842", size = 30270 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/cc/d0/14b8cdc3a26f3e62c94e0066d7793a399107ee9b7a501fb7c023160b649f/xgbse-0.2.3-py3-none-any.whl", hash = "sha256:9945ff39686a7ea2e3b7e799f621692b43b5a3ff786e72ae4c22f27992cc4314", size = 35117 },
+]
+
+[[package]]
+name = "xyzservices"
+version = "2025.10.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/58/2b/58b3db8814e39277dd6c34aa206f7d0231ff0406284e18e03d4920a4bc78/xyzservices-2025.10.0.tar.gz", hash = "sha256:c6b7648276c98e8222fbec84d9c763128cf3653705017a4d6c4c3652480ee144", size = 1135110 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5b/8f/447cc9cb57456d786204af0f450ffb920039104c5eff6626337c9f403bd1/xyzservices-2025.10.0-py3-none-any.whl", hash = "sha256:cfd6423367c7bc717ed5824d4dd7de2c91486886c1c193db9d8f0fa7fd43bc1b", size = 92737 },
 ]
 
 [[package]]

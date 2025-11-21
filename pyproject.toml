@@ -29,4 +29,6 @@ dependencies = [
     "pydantic<2.0.0",
     "synthetic-data-generation>=0.1.14",
     "lightgbm>=4.6.0",
+    "seaborn>=0.13.2",
+    "bokeh>=3.8.1",
 ]
